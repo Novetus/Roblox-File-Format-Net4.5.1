@@ -1,6 +1,8 @@
 # Roblox-File-Format
 A C# library designed to make it easy to create and manipulate files in Roblox's model/place file format!
 
+NOTE: This fork uses https://github.com/Novetus/ZstdSharp-Net4.5.1 for its ZstdSharp library.
+
 # Usage
 The `RobloxFile` class is the main entry point for opening and saving files.
 You can provide one of three possible inputs to `RobloxFile.Open`:
