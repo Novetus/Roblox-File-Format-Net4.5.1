@@ -76,7 +76,8 @@ namespace RobloxFiles.DataTypes
 
         public static SharedString FromBuffer(byte[] buffer)
         {
-            return new SharedString(buffer ?? Array.Empty<byte>());
+            byte[] UhNoMoreEmpty = new byte[0];
+            return new SharedString(buffer ?? UhNoMoreEmpty);
         }
 
         public static SharedString FromString(string value)

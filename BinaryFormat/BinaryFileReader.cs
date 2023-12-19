@@ -10,7 +10,8 @@ namespace RobloxFiles.BinaryFormat
     public class BinaryRobloxFileReader : BinaryReader
     {
         public readonly BinaryRobloxFile File;
-        private byte[] lastStringBuffer = Array.Empty<byte>();
+        private static byte[] UhNoMoreEmpty = new byte[0];
+        private byte[] lastStringBuffer = UhNoMoreEmpty;
 
         public BinaryRobloxFileReader(BinaryRobloxFile file, Stream stream) : base(stream)
         {

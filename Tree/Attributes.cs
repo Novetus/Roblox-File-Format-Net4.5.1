@@ -246,7 +246,10 @@ namespace RobloxFiles
         internal byte[] Save()
         {
             if (Count == 0)
-                return Array.Empty<byte>();
+            {
+                byte[] UhNoMoreEmpty = new byte[0];
+                return UhNoMoreEmpty;
+            }
 
             using (var output = new MemoryStream())
             using (var writer = new BinaryWriter(output))

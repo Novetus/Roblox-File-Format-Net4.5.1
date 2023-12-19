@@ -5,6 +5,7 @@ using System.IO.Compression;
 
 using LZ4;
 using ZstdSharp;
+using System.Collections.Generic;
 
 namespace RobloxFiles.BinaryFormat
 {
@@ -106,7 +107,8 @@ namespace RobloxFiles.BinaryFormat
             if (!compress || CompressedSize > Size)
             {
                 CompressedSize = 0;
-                CompressedData = Array.Empty<byte>();
+                byte[] UhNoMoreEmpty = new byte[0];
+                CompressedData = UhNoMoreEmpty;
             }
 
             ChunkType = writer.ChunkType;
