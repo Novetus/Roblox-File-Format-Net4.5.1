@@ -1241,8 +1241,7 @@ namespace RobloxFiles.BinaryFormat.Chunks
 
                         if (shared == null)
                         {
-                            byte[] UhNoMoreEmpty = new byte[0];
-                            byte[] empty = UhNoMoreEmpty;
+                            byte[] empty = new byte[0];
                             shared = SharedString.FromBuffer(empty);
                         }
 

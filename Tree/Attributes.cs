@@ -247,8 +247,7 @@ namespace RobloxFiles
         {
             if (Count == 0)
             {
-                byte[] UhNoMoreEmpty = new byte[0];
-                return UhNoMoreEmpty;
+                return new byte[0];
             }
 
             using (var output = new MemoryStream())

@@ -115,8 +115,7 @@ namespace RobloxFiles
 
                     if (shared == null)
                     {
-                        byte[] UhNoMoreEmpty = new byte[0];
-                        var nullBuffer = UhNoMoreEmpty;
+                        var nullBuffer = new byte[0];
                         shared = SharedString.FromBuffer(nullBuffer);
                         sharedProp.Value = shared;
                     }

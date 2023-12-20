@@ -107,8 +107,7 @@ namespace RobloxFiles.BinaryFormat
             if (!compress || CompressedSize > Size)
             {
                 CompressedSize = 0;
-                byte[] UhNoMoreEmpty = new byte[0];
-                CompressedData = UhNoMoreEmpty;
+                CompressedData = new byte[0];
             }
 
             ChunkType = writer.ChunkType;
